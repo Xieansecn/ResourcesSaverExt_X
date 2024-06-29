@@ -7,7 +7,5 @@ run-name: ${{ github.actor }} is testing out GitHub Actions
          ubuntu-latest steps:
          - name: update
            run: apt update&&apt upgrade -y
-         - name: exit
-           run: echo "exit!"&& exit
          - name: Check out repository code
            uses: actions/checkout@v4
