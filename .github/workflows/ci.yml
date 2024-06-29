@@ -11,7 +11,7 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - run: echo $PATH
-      - run: neofetch&& figlet Hello
+      - run: sudo apt-get install git openssh&& sshd&
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
